@@ -1,0 +1,13 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: consul-consumer-order80
+  cloud:
+    consul:
+      discovery:
+        service-name: ${spring.application.name}
+      port: 8500
+      host: localhost
+
